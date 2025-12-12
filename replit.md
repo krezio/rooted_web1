@@ -1,6 +1,6 @@
 # Rooted Flowers by RS
 
-A premium floral design website built with React, Express, and Vite.
+A premium floral design e-commerce website built with React, Express, and Vite.
 
 ## Overview
 
@@ -14,7 +14,7 @@ This is a full-stack application featuring:
 ```
 ├── src/                  # Frontend application
 │   ├── components/       # React components
-│   │   ├── cart/         # Shopping cart components
+│   │   ├── cart/         # Shopping cart & checkout
 │   │   ├── home/         # Homepage sections
 │   │   ├── layout/       # Navbar, Footer
 │   │   └── ui/           # Reusable UI components
@@ -49,13 +49,37 @@ The server runs on port 5000 and serves both the API and Vite-powered frontend.
 
 ## Features
 
-- Premium collection page with 3D hover effects and parallax
+### Collection Page
+- Premium 3D tilt effect on product cards
 - Category filtering with animated transitions
 - Quick view modal for products
-- Shopping cart with toast notifications
+- Heart/wishlist button
+- Elegant gradient overlays and animations
+
+### Checkout Flow
+- Multi-step checkout form
+- Customer details (name, phone, email)
+- Delivery details (emirate, area, full address)
+- Date and time slot selection
+- Optional: occasion, card message, special instructions
+- Order summary and confirmation
+- WhatsApp integration for order completion
+
+### UI/UX
 - Custom leaf cursor animation
 - Smooth page transitions
+- Premium preloader animation
 - Responsive design for all devices
+- Scroll progress indicator
+- Glass morphism effects
+
+### Footer
+- Social media links (Instagram, WhatsApp, Email)
+- Contact information with hours
+- Elegant animations and hover effects
+
+## WhatsApp Business
+Orders are completed via WhatsApp at: +971 56 290 1494
 
 ## Architecture Decisions
 
@@ -63,3 +87,4 @@ The server runs on port 5000 and serves both the API and Vite-powered frontend.
 - Vite runs in middleware mode during development for HMR
 - TailwindCSS v4 with the new Vite plugin
 - Framer Motion for all animations
+- Zustand for cart state management with localStorage persistence
